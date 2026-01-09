@@ -4,6 +4,7 @@ import Services from "./components/Services";
 import Tariff from "./components/Tarrif";
 import Contact from "./components/Contact";
 import Packages from "./components/Packages"
+import Hero from "./components/Hero"
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -19,11 +20,8 @@ function App() {
   return (
     <>
       <Header />
-      <section id="home">
-        <h1>Madurai Solo Drop Taxi</h1>
-        <p>Reliable One-Way Taxi Services from Madurai</p>
-      </section>
-
+        <Hero />
+        
       <section id="services">
         <Services />
       </section>
