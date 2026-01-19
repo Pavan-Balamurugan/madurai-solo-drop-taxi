@@ -1,0 +1,78 @@
+.services-section {
+  padding: 100px 6%;
+  background: linear-gradient(
+      rgba(10, 15, 25, 0.64),
+      rgba(10, 15, 25, 0.64)
+    ),
+    url("../assets/car-bg.avif");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  margin: 0px !important;
+}
+
+.services-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.services-header h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.services-header p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #d6d6d6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.service-icon {
+  font-size: 2.8rem;
+  color: #ffcc00;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .services-header h2 {
+    font-size: 2.1rem;
+  }
+}
